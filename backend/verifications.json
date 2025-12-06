@@ -1,0 +1,58 @@
+{
+  "lawyer1": {
+    "userId": "lawyer1",
+    "status": "pending_review",
+    "history": [
+      {
+        "when": "2025-12-02T19:28:46.417Z",
+        "what": "id_uploaded"
+      },
+      {
+        "when": "2025-12-02T19:29:09.092Z",
+        "what": "credentials_submitted"
+      },
+      {
+        "when": "2025-12-02T19:29:13.373Z",
+        "what": "credentials_submitted"
+      },
+      {
+        "when": "2025-12-02T19:29:24.435Z",
+        "what": "credentials_submitted"
+      },
+      {
+        "when": "2025-12-03T04:58:49.771Z",
+        "what": "id_uploaded"
+      },
+      {
+        "when": "2025-12-03T04:58:52.762Z",
+        "what": "id_uploaded"
+      },
+      {
+        "when": "2025-12-03T04:59:30.382Z",
+        "what": "id_uploaded"
+      },
+      {
+        "when": "2025-12-03T04:59:31.661Z",
+        "what": "id_uploaded"
+      },
+      {
+        "when": "2025-12-03T04:59:32.787Z",
+        "what": "id_uploaded"
+      },
+      {
+        "when": "2025-12-03T04:59:33.515Z",
+        "what": "id_uploaded"
+      }
+    ],
+    "idDocument": {
+      "filename": "1764737973512-Screenshot (235).png",
+      "original": "Screenshot (235).png",
+      "uploadedAt": "2025-12-03T04:59:33.515Z",
+      "url": "/uploads/1764737973512-Screenshot (235).png"
+    },
+    "phone": "11111111111111111111111",
+    "barNumber": "11111111",
+    "jurisdiction": "1111111111111",
+    "practiceAreas": []
+  }
+}

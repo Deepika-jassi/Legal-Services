@@ -1,0 +1,10 @@
+.verified-badge {
+  display: inline-block;
+  background: #2ecc71;
+  padding: 5px 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 10px;
+}

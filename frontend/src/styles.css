@@ -1,0 +1,102 @@
+/* ---------- Global Page Styling ---------- */
+body {
+  background: #f8f9fa;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------- Navbar Styling ---------- */
+.navbar {
+  background-color: #1a237e; /* deep blue */
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #ffeb3b; /* yellow */
+}
+
+/* ---------- Page Layout ---------- */
+.page-container {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* ---------- Button Styling ---------- */
+.btn {
+  background: #1a237e;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background: #0d1654;
+}
+
+/* ---------- Input Styling ---------- */
+input, select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+label {
+  font-weight: 600;
+}
+
+/* ---------- Card Styling (for listings, lawyers etc.) ---------- */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  color: #1a237e;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: #555;
+  font-size: 14px;
+}
+
+/* ---------- Center Layout ---------- */
+.center {
+  text-align: center;
+}

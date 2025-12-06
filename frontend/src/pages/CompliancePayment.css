@@ -1,0 +1,58 @@
+.compliance-payment-container {
+  max-width: 480px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.compliance-payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.compliance-payment-form label {
+  font-weight: 600;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.compliance-payment-form input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.compliance-payment-form input[type="text"],
+.compliance-payment-form input[type="password"] {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 7px;
+  border: 1px solid #bbb;
+}
+
+.error {
+  color: red;
+  font-weight: 700;
+  margin: 0;
+}
+
+.submit-btn {
+  margin-top: 1rem;
+  background-color: #4a90e2;
+  color: white;
+  padding: 0.9rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #357abd;
+}

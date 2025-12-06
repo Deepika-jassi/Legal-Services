@@ -1,0 +1,104 @@
+/* ---------- Page Background ---------- */
+.register-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #c850c0, #4158d0, #ffcc70);
+  padding: 2rem;
+}
+
+/* ---------- Glass Card ---------- */
+.register-card {
+  width: 420px;
+  backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.25);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- Header ---------- */
+.register-card h2 {
+  text-align: center;
+  color: #101010;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* ---------- Floating Inputs ---------- */
+.input-group {
+  position: relative;
+  margin-bottom: 1.4rem;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 14px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(14, 13, 13, 0.6);
+  background: rgba(255,255,255,0.15);
+  color: #060505;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* ---------- Floating Label ---------- */
+.input-group label {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  color: #050404;
+  font-size: 0.95rem;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group select:focus + label,
+.input-group select:not([value=""]) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 0.8rem;
+  background: rgba(255,255,255,0.3);
+  padding: 0px 6px;
+  border-radius: 6px;
+}
+
+/* ---------- Button ---------- */
+.btn-register {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: #0d0d0d;
+  color: #4158d0;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-register:hover {
+  background: #ffcc70;
+  color: #000;
+  transform: translateY(-2px);
+}
+
+/* ---------- Message ---------- */
+.message {
+  margin-top: 1rem;
+  text-align: center;
+  color: #191818;
+  font-weight: 600;
+}

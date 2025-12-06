@@ -1,0 +1,133 @@
+.navbar {
+  background-color: #4a90e2;
+  padding: 1rem 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar-links li {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.navbar-links a:hover {
+  color: #50e3c2;
+}
+
+.auth-button {
+  background-color: #50e3c2;
+  border: none;
+  color: #fff;
+  padding: 0.55rem 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.auth-button:hover {
+  background-color: #3bbfa1;
+}
+
+.auth-form-container {
+  position: absolute;
+  top: 100%;
+  right: 2rem;
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  color: #000;
+  width: 320px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.auth-form h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #4a90e2;
+  text-align: center;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  margin: 0.4rem 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background-color: #4a90e2;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #357abd;
+}
+
+.auth-form p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #333;
+}
+
+.toggle-link {
+  border: none;
+  background: none;
+  color: #4a90e2;
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: underline;
+  padding: 0;
+  margin-left: 5px;
+}
+
+.kyc-link {
+  font-weight: 700;
+  color: #50e3c2;
+  cursor: pointer;
+}
+
+.kyc-link:hover {
+  color: #3bbfa1;
+}

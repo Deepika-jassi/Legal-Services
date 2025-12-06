@@ -1,0 +1,51 @@
+/* shared lightweight CSS for services, docs, messages */
+
+.simple-page {
+  padding: 28px 40px;
+  min-height: calc(100vh - 72px);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #0b1437;
+  background: linear-gradient(135deg, #6b46ff 0%, #4299e1 50%, #f6ad55 100%);
+}
+
+.simple-page h2 { margin: 0 0 6px; font-size: 28px; }
+.muted { color: rgba(11,20,55,0.6); margin-bottom: 12px; }
+
+/* panel */
+.panel { background: rgba(255,255,255,0.95); padding: 14px; border-radius: 10px; box-shadow: 0 8px 30px rgba(2,6,23,0.12); margin-bottom: 18px; }
+.form-row { display:flex; gap:10px; margin-bottom:8px; }
+.form-row input { flex:1; padding:10px; border-radius:8px; border:1px solid #ddd; }
+textarea { width:100%; min-height:68px; padding:10px; border-radius:8px; border:1px solid #ddd; }
+
+/* buttons small */
+.btn { background: linear-gradient(90deg,#2fb4ff,#6f86ff); color:white; border:none; padding:8px 14px; border-radius:8px; cursor:pointer; font-weight:700; }
+.btn-outline { background:transparent; border:1px solid #ddd; color:#111; padding:8px 12px; border-radius:8px; }
+.btn-mini { padding:6px 8px; border-radius:8px; border:none; cursor:pointer; margin-left:6px; }
+.btn-ghost { background:transparent; border:1px solid rgba(0,0,0,0.06); padding:6px 10px; border-radius:8px; }
+.btn-mini.danger { background:#e14b4b; color:white; }
+
+/* grid of service cards */
+.cards-grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap:14px; margin-top:16px; }
+.card-small { background:white; padding:16px; border-radius:10px; box-shadow: 0 8px 20px rgba(2,6,23,0.08); }
+.card-small h3 { margin:0 0 6px; }
+.card-small .price { color:#2b7be6; font-weight:700; margin-bottom:8px; }
+.card-actions { margin-top:10px; display:flex; gap:8px; align-items:center; }
+
+/* docs */
+.doc-list { margin-top: 12px; display:flex; flex-direction:column; gap:8px; }
+.doc-row { background:white; padding:12px; border-radius:8px; display:flex; justify-content:space-between; align-items:center; box-shadow:0 8px 18px rgba(2,6,23,0.06); }
+
+/* chat */
+.chat-wrap { display:flex; gap:12px; margin-top:12px; }
+.chat-list { width: 260px; background: rgba(255,255,255,0.95); border-radius:8px; padding:8px; box-shadow:0 8px 20px rgba(2,6,23,0.08); max-height:60vh; overflow:auto; }
+.chat-item { padding:10px; border-radius:8px; cursor:pointer; }
+.chat-item.active { background: linear-gradient(90deg,#f4fbff,#eef6ff); box-shadow: inset 0 0 0 1px rgba(0,0,0,0.03); }
+.chat-name { font-weight:700; }
+.chat-panel { flex:1; background: rgba(255,255,255,0.95); border-radius:8px; padding:12px; display:flex; flex-direction:column; max-height:60vh; }
+.chat-messages { flex:1; overflow:auto; padding:8px; }
+.chat-msg { margin-bottom:10px; max-width:70%; }
+.chat-msg.sent { margin-left:auto; text-align:right; }
+.chat-msg .chat-text { display:inline-block; padding:10px; border-radius:10px; background:#e9f5ff; }
+.chat-msg.sent .chat-text { background: linear-gradient(90deg,#2fb4ff,#6f86ff); color:white; }
+.chat-input { display:flex; gap:8px; margin-top:8px; }
+.chat-input input { flex:1; padding:8px; border-radius:8px; border:1px solid #ddd; }

@@ -1,0 +1,61 @@
+/* form.css — inputs, selects, button styling for the inner form */
+
+.form-inner input,
+.form-inner select,
+.form-inner textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(10,20,40,0.08);
+  background: #fff;
+  font-size: 14px;
+  color: #0b2b4a;
+  margin: 12px 0;
+  box-sizing: border-box;
+  transition: box-shadow .12s ease, transform .08s ease;
+}
+
+/* focus state */
+.form-inner input:focus,
+.form-inner select:focus {
+  outline: none;
+  border-color: rgba(58,144,255,0.9);
+  box-shadow: 0 8px 22px rgba(58,144,255,0.08);
+  transform: translateY(-1px);
+}
+
+/* pill style button */
+.form-inner button {
+  width: 100%;
+  padding: 14px 16px;
+  margin-top: 10px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #3a90ff 0%, #6b3bd1 100%);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 12px 28px rgba(58,144,255,0.18);
+  transition: transform .12s ease, opacity .12s;
+}
+
+/* hover */
+.form-inner button:hover {
+  transform: translateY(-2px);
+  opacity: 0.98;
+}
+
+/* small muted text */
+.form-inner .muted {
+  color: #6b7280;
+  font-size: 13px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media (max-width: 520px) {
+  .form-inner { padding: 18px; }
+  .form-inner input { padding: 10px; }
+  .form-inner button { padding: 12px; }
+}

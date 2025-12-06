@@ -1,0 +1,126 @@
+/* Documents page - glassmorphism style */
+.docs-wrapper {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px 20px;
+  background: linear-gradient(180deg, rgba(12,34,61,0.04), rgba(255,255,255,0.02));
+}
+
+.docs-card {
+  width: 720px;
+  max-width: 96%;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(10,20,40,0.12);
+  border: 1px solid rgba(255,255,255,0.14);
+  color: #0a0a0a;
+  animation: floatIn 0.6s ease;
+}
+
+@keyframes floatIn {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.docs-card h2 {
+  margin: 0 0 18px 0;
+  color: #151414;
+  font-size: 1.6rem;
+  letter-spacing: 0.2px;
+}
+
+/* upload row */
+.upload-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.input-doc {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.06);
+  color: #131212;
+  outline: none;
+  font-size: 0.98rem;
+}
+
+.input-doc::placeholder { color: rgba(255,255,255,0.6); }
+
+.btn-upload {
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: none;
+  background: #ffffff;
+  color: #2b3a67;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .15s ease, background .15s ease;
+}
+
+.btn-upload:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.btn-upload:hover:not(:disabled) { transform: translateY(-3px); }
+
+/* message */
+.docs-msg {
+  margin: 8px 0 12px 0;
+  color: #151515;
+  font-weight: 600;
+}
+
+/* docs list */
+.docs-list {
+  margin-top: 12px;
+  background: rgba(255,255,255,0.03);
+  padding: 12px;
+  border-radius: 10px;
+  min-height: 80px;
+}
+
+.empty {
+  color: rgba(21, 21, 21, 0.7);
+}
+
+.docs-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.doc-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 8px;
+  transition: background .15s ease, transform .15s ease;
+}
+
+.doc-item + .doc-item {
+  margin-top: 8px;
+}
+
+.doc-item:hover {
+  background: rgba(255,255,255,0.04);
+  transform: translateY(-3px);
+}
+
+.doc-name {
+  color: #1a1818;
+  font-weight: 600;
+}
+
+.doc-meta {
+  color: rgba(19, 18, 18, 0.65);
+  font-size: 0.85rem;
+}

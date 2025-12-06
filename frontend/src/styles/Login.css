@@ -1,0 +1,108 @@
+/* Login.css — big colorful background + translucent outer card layout */
+:root{
+  --primary-1: #8b4bd7;
+  --primary-2: #3a90ff;
+  --accent: #ffd27a;
+  --card-glass: rgba(255,255,255,0.12);
+  --card-inner: #ffffff;
+  --muted: #6b7280;
+  --round: 18px;
+  --shadow-lg: 0 20px 50px rgba(10,20,40,0.18);
+}
+
+html,body,#root {
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Large soft gradient background (matches your screenshot) */
+body {
+  background: linear-gradient(135deg, #8b4bd7 0%, #5a7aff 40%, #b8956a 100%);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  color: #0b2b4a;
+}
+
+/* full page wrapper centers content vertically */
+.login-page {
+  min-height: calc(100vh - 72px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* grid: left heading + right card (becomes stacked on mobile) */
+.login-grid {
+  width: 100%;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 1fr 560px;
+  gap: 40px;
+  align-items: center;
+}
+
+/* left heading style */
+.login-heading h1 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 0 4px 18px rgba(10,20,40,0.2);
+  padding-left: 8px;
+}
+
+/* translucent outer card with soft blur */
+.login-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.04));
+  border-radius: var(--round);
+  padding: 34px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(10px);
+}
+
+/* inner white form panel */
+.form-inner {
+  background: var(--card-inner);
+  border-radius: 12px;
+  padding: 26px;
+  box-shadow: 0 8px 24px rgba(6,22,50,0.06);
+  border: 1px solid rgba(10,20,40,0.04);
+}
+
+/* small heading in the card */
+.form-inner h2 {
+  text-align: center;
+  margin: 0 0 16px;
+  font-size: 22px;
+  color: #08163a;
+}
+
+/* message text */
+.form-inner p.message {
+  margin-top: 12px;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* stacked on small screens */
+@media (max-width: 900px) {
+  .login-grid { grid-template-columns: 1fr; }
+  .login-heading { text-align: center; margin-bottom: 12px; }
+  .login-card { margin: 0 auto; }
+}
+.login-center {
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.login-title {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
